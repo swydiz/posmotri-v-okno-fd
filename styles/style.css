@@ -81,8 +81,8 @@ ol {
 }
 
 .search-form {
-  display: grid;
-  grid-template-columns: auto auto auto;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 711px;
   cursor: pointer;
@@ -134,11 +134,17 @@ ol {
   background-color: transparent;
   width: 225px;
   min-height: 27px;
-  color: white;
+  color: #FFF;
+  font-family: "Fira Sans Condensed";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.search-form__label:active {
-  outline: 1px solid #fff;
+.search-form__textfield:active {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
 }
 
 .search-form__label:focus {
@@ -210,7 +216,6 @@ ol {
   width: 390px;
   overflow: auto;
   position: relative;
-  overflow-x: hidden;
 }
 
 .content__list {
@@ -239,25 +244,26 @@ ol {
 
 .content__video-card-description-container {
   flex-grow: 1;
-  width: 197px;
+  width: 192px;
+  height: 55px;
   display: grid;
   gap: 4px;
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
-.content__video-card-description-container:hover {
+.content__card-link:hover {
   text-decoration: underline;
 }
 
-.content__video-card-description-container:active {
+.content__card-link:active {
   background-color: #545050;
 }
 
-.content__video-card-description-container:focus {
+.content__card-link:focus {
   outline: none;
 }
 
-.content__video-card-description-container:focus-visible {
+.content__card-link:focus-visible {
   border: 1px solid #fff;
 }
 
